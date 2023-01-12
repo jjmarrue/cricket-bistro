@@ -1,3 +1,14 @@
-import _ from './header';
+import './style.css';
 
-console.log('webpack build was successful');
+
+const content = document.getElementById('content');
+const header = document.createElement('header');
+
+// 3 parts: logo, resturant name, nav menu (tabs)
+
+header.innerText = `
+  test
+`;
+
+
+content.appendChild(header);

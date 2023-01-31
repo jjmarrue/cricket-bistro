@@ -1,21 +1,11 @@
 /* @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;400;500;700&display=swap');
 :root {
-  /* --dark-green: #053245;
-  --dark-blue: #081a5a;
-  --medium-green: #068775;
-  --light-green: #17ba83;
-  --grass-green: #69b843; */
   --main-bg: #FFFDF9;
   --menu-clr: #b03f3c;
   --menu-clr-hover: #1b201d;
   --title-clr: #1b201d;
 }
-
-
-/* *{
-  border: 1px solid red;
-} */
 
 *,
 html {
@@ -40,6 +30,15 @@ ul > li {
 
 a {
   text-decoration: none;
+}
+
+p {
+  font-size: 1.3rem;
+  line-height: 1.75rem;
+}
+
+h2 {
+  font-size: 1.75rem;
 }
 
 .nav-holder {
@@ -82,10 +81,9 @@ a {
   height: auto;
 }
 
-.mainContent {
+.homeContent {
   display: grid;
   grid-template-rows: 0.5fr 1fr;
-  /* grid-template-columns: 1fr; */
   align-items: flex-start;
   justify-items: center;
   margin: 20px;
@@ -94,13 +92,45 @@ a {
 
 #bistro {
   max-width: 400px;
-  height: auto;
-  
+  height: auto; 
 }
 
-.mainContent p {
-  font-size: 1.3rem;
-  line-height: 1.75rem;
+.menu-content {
+  display: grid;
+  grid-template-rows: 1fr;
+  align-items: flex-start;
+  justify-items: center;
+  margin: 20px;
+  gap: 50px;
+}
+
+.meal-img {
+  max-width: 300px;
+  height: auto;
+}
+
+.menu-section {
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-items: center;
+
+}
+
+.menu-section h2,
+.menu-section p {
+  text-align: center;
+}
+
+.menu-section > h2 {
+  margin-bottom: 35px;
+}
+.menu-section > p {
+  margin-bottom: 25px;
+  text-transform: capitalize;
+}
+
+.menu-section > img {
+  margin-bottom: 8px;
 }
 
 @media screen and (max-width: 520px) {

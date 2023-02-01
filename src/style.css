@@ -32,7 +32,8 @@ a {
   text-decoration: none;
 }
 
-p {
+p,
+ul > li {
   font-size: 1.3rem;
   line-height: 1.75rem;
 }
@@ -81,27 +82,20 @@ h2 {
   height: auto;
 }
 
-.homeContent {
-  display: grid;
-  grid-template-rows: 0.5fr 1fr;
-  align-items: flex-start;
-  justify-items: center;
-  margin: 20px;
-  gap: 40px;
-}
-
 #bistro {
   max-width: 400px;
   height: auto; 
 }
 
-.menu-content {
+.homeContent,
+.menu-content,
+.contact {
   display: grid;
   grid-template-rows: 1fr;
   align-items: flex-start;
   justify-items: center;
   margin: 20px;
-  gap: 50px;
+  gap: 40px;
 }
 
 .meal-img {
@@ -113,29 +107,65 @@ h2 {
   display: grid;
   grid-template-rows: 1fr;
   justify-items: center;
-
 }
 
 .menu-section h2,
-.menu-section p {
+.menu-section p,
+.contact {
   text-align: center;
 }
 
 .menu-section > h2 {
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
+
 .menu-section > p {
   margin-bottom: 25px;
   text-transform: capitalize;
+  font-weight: bold;
 }
 
 .menu-section > img {
   margin-bottom: 8px;
 }
 
+.contact h2 {
+  margin-bottom: 18px;
+}
+
+
+/* 
+ * Styles for footer
+ */
+
+footer {
+  padding: 20px;
+  text-align: center;
+  box-shadow:  0 2px 4px 1px rgba(0,0,0,0.15);
+}
+
+footer p {
+  font-size: 0.85rem;
+  font-weight: 300;
+  line-height: 1.75em;
+}
+
+footer a {
+  color: var(--menu-clr);
+}
+
+footer .fa-github{
+  font-size: 20px;
+}
+
+footer a:hover {
+  color: var(--menu-clr-hover);
+}
+
+
 @media screen and (max-width: 520px) {
-  #bistro {
+  #bistro,
+  .meal-img {
     max-width: 90%;
   }
-
 }

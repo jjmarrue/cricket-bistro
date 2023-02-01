@@ -2,9 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;400;500;700&display=swap');
 :root {
   --main-bg: #FFFDF9;
-  --menu-clr: #b03f3c;
-  --menu-clr-hover: #1b201d;
+  --menu-clr: #1b201d;
+  --menu-clr-hover: #b03f3c;
   --title-clr: #1b201d;
+  --link: #15516a;
 }
 
 *,
@@ -16,8 +17,6 @@ html {
 
 html,
 body {
-  max-width: 900px;
-  margin: 0 auto;
   font-family: 'Josefin Slab', serif;
   font-weight: 400;
   font-size: 16px;
@@ -40,6 +39,15 @@ ul > li {
 
 h2 {
   font-size: 1.75rem;
+}
+
+#content {
+  max-width: 900px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
 }
 
 .nav-holder {
@@ -73,7 +81,7 @@ h2 {
   font-size: 2.5rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
-  color: var(--dark-blue);
+  color: var(--menu-clr);
   text-align: center;
 }
 
@@ -88,25 +96,37 @@ h2 {
 }
 
 .homeContent,
-.menu-content,
-.contact {
+.contact,
+.menu-content {
   display: grid;
-  grid-template-rows: 1fr;
+  grid-template-rows: 1fr 1fr;
   align-items: flex-start;
   justify-items: center;
-  margin: 20px;
+  margin: 50px 10px 20px;
   gap: 40px;
 }
 
-.meal-img {
-  max-width: 300px;
-  height: auto;
+.menu-content {
+  grid-template-rows: auto;
+  grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+}
+
+.contact {
+  grid-template-rows: min-content min-content;
 }
 
 .menu-section {
   display: grid;
   grid-template-rows: 1fr;
+  grid-template-columns: minmax(min-content, 300px);
   justify-items: center;
+  box-shadow:  0 2px 4px 1px rgba(0,0,0,0.15);
+  padding: 16px 8px 0;
+}
+
+.meal-img {
+  max-width: 300px;
+  height: auto;
 }
 
 .menu-section h2,
@@ -115,8 +135,10 @@ h2 {
   text-align: center;
 }
 
-.menu-section > h2 {
+.menu-section > h2,
+.contact h2 {
   margin-bottom: 30px;
+  color: var(--menu-clr-hover);
 }
 
 .menu-section > p {
@@ -133,33 +155,25 @@ h2 {
   margin-bottom: 18px;
 }
 
-
-/* 
- * Styles for footer
- */
-
-footer {
+.foot {
+  margin-top: 50px;
   padding: 20px;
   text-align: center;
-  box-shadow:  0 2px 4px 1px rgba(0,0,0,0.15);
 }
 
-footer p {
-  font-size: 0.85rem;
-  font-weight: 300;
+.foot p {
+  font-size: 0.95rem;
+  font-weight: 500;
   line-height: 1.75em;
+  color: var(--title-clr);
 }
 
 footer a {
-  color: var(--menu-clr);
-}
-
-footer .fa-github{
-  font-size: 20px;
+  color: var(--link);
 }
 
 footer a:hover {
-  color: var(--menu-clr-hover);
+  color: var(--title-clr);
 }
 
 

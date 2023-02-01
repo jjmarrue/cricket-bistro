@@ -8,7 +8,7 @@ export function contactPage() {
   const phone = document.createElement('li');
   const email = document.createElement('li');
 
-  address.innerText = 'G528+2MV, D769, Zambia';
+  address.innerText = '-14.466945886285274, 26.168460103226597';
   phone.innerText = '+260766753059';
   email.innerText = 'contact@mrcricket.zm';
   contact.innerHTML = '<h2>Contact Us</h2>';

@@ -25,6 +25,7 @@ for (let i = 1; i < 4; i++) {
       content.textContent = '';
       content.appendChild(header);
       content.appendChild(homePage());
+      content.appendChild(footer);
     });
   }
   if (i === 2){
@@ -33,6 +34,7 @@ for (let i = 1; i < 4; i++) {
       content.textContent = '';
       content.appendChild(header);
       content.appendChild(menuPage());
+      content.appendChild(footer);
     });
   }
   if (i === 3){
@@ -41,6 +43,7 @@ for (let i = 1; i < 4; i++) {
       content.textContent = '';
       content.appendChild(header);
       content.appendChild(contactPage());
+      content.appendChild(footer);
     });
   }
   ul.appendChild(li);
@@ -49,7 +52,6 @@ for (let i = 1; i < 4; i++) {
 logo.src = insect;
 h1.innerText = "Mr. Cricket's Bistro";
 footer.innerHTML = `
-<p><a href="https://github.com/jjmarrue/" ><i class="fa fa-github"></i></a></p>
 <p>Copyright &copy; 2023 Juan Mata</p>
 <p>A personal project created for the <a href="https://www.theodinproject.com/" target="_blank">Odin Project</a>.</p>
 `;
@@ -72,3 +74,4 @@ ul.classList.add('nav-bar');
 h1.classList.add('main-header');
 logo.id = 'logo';
 div.classList.add('nav-holder');
+footer.classList.add('foot');

@@ -87,8 +87,8 @@ export function menuPage() {
     const menuSection = document.createElement('div');
     const sectionTitle = document.createElement('h2');
     menuSection.classList.add('menu-section');
-    
     sectionTitle.innerText = menu[i].type;  // type of meal
+    
     menuSection.appendChild(sectionTitle);
     menuContent.appendChild(menuSection);
 

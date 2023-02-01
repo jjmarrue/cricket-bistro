@@ -8,13 +8,13 @@ export function contactPage() {
   const phone = document.createElement('li');
   const email = document.createElement('li');
 
-  address.innerText = '-14.466945886285274, 26.168460103226597';
-  phone.innerText = '+260766753059';
-  email.innerText = 'contact@mrcricket.zm';
+  address.innerHTML = '<span>Coordinates:</span> -14.466945886285274, 26.168460103226597';
+  phone.innerHTML = '<span>Phone:</span> +260766753059';
+  email.innerHTML = '<span>Email:</span> contact@mrcricket.zm';
   contact.innerHTML = '<h2>Contact Us</h2>';
   hours.innerHTML = `
   <h2>Hours of Operation</h2>
-  <p>Monday - Friday</p>
+  <p><span>Monday - Friday</span></p>
   <ul>
     <li>Lunch: 12:00 PM — 2:00 PM</li>
   <li>Dinner: 5:00 PM — 10:00 PM</li>

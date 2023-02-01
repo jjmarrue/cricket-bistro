@@ -4,7 +4,6 @@ import {menuPage} from './menu.js';
 import {contactPage} from './contact.js';
 import insect from './assets/images/insect.png';
 
-// Create DOM elements
 const content = document.getElementById('content');
 const header = document.createElement('header');
 const h1 = document.createElement('h1');
@@ -56,19 +55,14 @@ footer.innerHTML = `
 <p>A personal project created for the <a href="https://www.theodinproject.com/" target="_blank">Odin Project</a>.</p>
 `;
 
-// Append elements
-
 h1.appendChild(logo);
 div.appendChild(h1);
 div.appendChild(nav);
 nav.appendChild(ul);
 header.appendChild(div);
-
 content.appendChild(header);
 content.appendChild(homePage());
 content.appendChild(footer);
-
-// Apply css classes/ids
 
 ul.classList.add('nav-bar');
 h1.classList.add('main-header');

@@ -50,7 +50,7 @@ export function menuPage() {
       ]
     },
     {
-      type: 'Dessert',
+      type: 'Desserts',
       meals: [
         {
           dish: 'mealworm sticky toffee pudding',
@@ -88,7 +88,7 @@ export function menuPage() {
     const sectionTitle = document.createElement('h2');
     menuSection.classList.add('menu-section');
     sectionTitle.innerText = menu[i].type;  // type of meal
-    
+
     menuSection.appendChild(sectionTitle);
     menuContent.appendChild(menuSection);
 

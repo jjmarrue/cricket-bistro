@@ -1,3 +1,7 @@
+import findMe from './assets/images/location-dot-solid.svg';
+import emailMe from './assets/images/envelope-solid.svg';
+import phoneMe from './assets/images/phone-solid.svg';
+
 export function contactPage() {
   const contactContent = document.createElement('div');
   contactContent.classList.add('contact');
@@ -8,9 +12,9 @@ export function contactPage() {
   const phone = document.createElement('li');
   const email = document.createElement('li');
 
-  address.innerHTML = '<span>Coordinates:</span> -14.466945886285274, 26.168460103226597';
-  phone.innerHTML = '<span>Phone:</span> +260766753059';
-  email.innerHTML = '<span>Email:</span> contact@mrcricket.zm';
+  address.innerHTML = '<span><img src='+findMe+'></span> -14.466945886285274, 26.168460103226597';
+  phone.innerHTML = '<span><img src='+emailMe+'></span> +260766753059';
+  email.innerHTML = '<span><img src='+phoneMe+'></span> contact@mrcricket.zm';
   contact.innerHTML = '<h2>Contact Us</h2>';
   hours.innerHTML = `
   <h2>Hours of Operation</h2>

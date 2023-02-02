@@ -166,12 +166,20 @@ h2 {
   color: var(--title-clr);
 }
 
-footer a {
+footer a,
+footer img {
   color: var(--link);
 }
 
-footer a:hover {
-  color: var(--title-clr);
+footer a:hover,
+footer img:hover {
+  color: var(--menu-clr-hover);
+}
+
+footer img,
+.contact img {
+  width: 18px;
+  height: auto;
 }
 
 @media screen and (max-width: 375px) {

@@ -3,6 +3,7 @@ import {homePage} from './home.js';
 import {menuPage} from './menu.js';
 import {contactPage} from './contact.js';
 import insect from './assets/images/insect.png';
+import github from './assets/images/github-alt.svg';
 
 const content = document.getElementById('content');
 const header = document.createElement('header');
@@ -12,6 +13,7 @@ const ul = document.createElement('ul');
 const logo = document.createElement('img');
 const div = document.createElement('div');
 const footer = document.createElement('footer');
+const myGithub = document.createElement('img');
 
 for (let i = 1; i < 4; i++) {
   const link = document.createElement('a');
@@ -49,8 +51,10 @@ for (let i = 1; i < 4; i++) {
 }
 
 logo.src = insect;
+myGithub.src = github;
 h1.innerText = "Mr. Cricket's Bistro";
 footer.innerHTML = `
+<p><a href="https://github.com/jjmarrue/" target="_blank"><img src=`+github+`></a></p>
 <p>Copyright &copy; 2023 Juan Mata</p>
 <p>A personal project created for the <a href="https://www.theodinproject.com/" target="_blank">Odin Project</a>.</p>
 `;
